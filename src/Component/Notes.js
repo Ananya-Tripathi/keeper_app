@@ -1,11 +1,10 @@
 import React from "react";
 import { NotesComponent } from "./NotesComponent";
-
+import data from "./data";
 export default function Notes() {
   return (
-    <div className="mx-10 mt-10 h-[600px] border-4 flex-wrap gap-8">
-      <NotesComponent title="Notes" notes="notes" />
-      <NotesComponent title="pluck" notes="pick " />
+    <div className="mx-10 my-10 flex flex-wrap gap-8 min-h-screen px-4 ">
+      {data.map(NotesComponent)}
     </div>
   );
 }

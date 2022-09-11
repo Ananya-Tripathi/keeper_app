@@ -4,7 +4,7 @@ import Notes from "./Component/Notes";
 import { Footer } from "./Component/Footer";
 export default function App() {
   return (
-    <div>
+    <div className="bg-slate-400">
       <Header />
       <Notes />
       <Footer />
