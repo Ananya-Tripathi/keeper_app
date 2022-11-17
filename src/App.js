@@ -18,7 +18,9 @@ export default function App() {
       <InputTask onAdd={addNote} />
       <div className="mx-10 my-10 flex flex-wrap gap-8 min-h-screen px-4 ">
         {note.map((noteItem) => {
-          return <NotesComponent title={note.title} content={note.content} />;
+          return (
+            <NotesComponent title={noteItem.title} content={noteItem.meta} />
+          );
         })}
       </div>
       <Footer />
